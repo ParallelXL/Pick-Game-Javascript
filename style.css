@@ -208,3 +208,107 @@ main {
 .hidden {
   display: none;
 }
+
+/* laptop */
+@media screen and (max-width: 1100px) {
+  main {
+    width: 90%;
+  }
+}
+
+/* tab */
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 55% !important;
+  }
+
+  main {
+    width: 98% !important;
+  }
+
+  .player {
+    padding: 6rem 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 660px) {
+  body {
+    height: 100vh;
+  }
+  body,
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  main {
+    width: 90% !important;
+    height: 95%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .player {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .score {
+    font-size: 5rem;
+    margin: 0;
+  }
+
+  .current {
+    border-radius: 5px;
+    width: 100px;
+    padding: 1rem 0 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .current-label {
+    margin-bottom: 0;
+  }
+
+  .btn,
+  .btn:active,
+  .dice {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    color: #2f2f2f;
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  .btn--new {
+    top: 4rem !important;
+    right: 3rem !important;
+  }
+
+  .btn--roll {
+    top: 20rem !important;
+    left: 3rem !important;
+  }
+
+  .btn--hold {
+    top: 20rem !important;
+    right: 3rem !important;
+  }
+
+  .dice {
+    top: 3rem !important;
+    left: 3rem !important;
+  }
+}
